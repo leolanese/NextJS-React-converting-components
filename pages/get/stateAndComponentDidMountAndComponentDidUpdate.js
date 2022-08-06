@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 function App() {
   // this kind of optimise the code as:
@@ -37,6 +38,12 @@ function App() {
         className="btn btn-large right">
         click-me
       </button>
+      
+      <h2 className="title">
+        <Link href="/">
+          <a>Back to index.js</a>
+        </Link>
+      </h2>
 
     </div>
   );
