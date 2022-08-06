@@ -22,11 +22,11 @@ export default function Home() {
           </p>
 
           <p className="card">
-            <Link href="/requests/RequestRemoteAPI">
-              <a>'RequestRemoteAPI.js'</a>
+            <Link href="/requests/RequestRemoteApi">
+              <a>'RequestRemoteApi.js'</a>
             </Link>
           </p>
-        </div>.
+        </div>
 
         <div className="grid">
           <div className="customHr">.z</div>
