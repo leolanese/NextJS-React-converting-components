@@ -18,8 +18,9 @@ export default function singleHook() {
 
   return (
     <div>
-
-      <h1>Adding Hooks to Classes with State</h1>
+      <header>
+        <h1>Adding Hooks to Classes with State</h1>
+      </header>  
 
       <input
         type="text"

@@ -25,8 +25,9 @@ export default function multipleHooks() {
 
   return (
     <div>
-
-      <h1>Adding Hooks to Classes with Multiple State Properties</h1>
+      <headear>
+        <h1>Adding Hooks to Classes with Multiple State Properties</h1>
+      </headear>
 
       <input
         type="text"
