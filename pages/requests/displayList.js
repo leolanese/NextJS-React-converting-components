@@ -20,8 +20,11 @@ export default function FirstPost() {
   const [ movies, setMovies ] = useState(initialValue);
   const [ toDoList, setToDoList ] = useState(data);
 
-  const alertName = () => {
-    console.log(movies);
+  const logFirstList = () => {
+    console.table(movies);
+  };
+  const logSecondList = () => {
+    console.table(toDoList);
   };
 
   return (
@@ -35,6 +38,7 @@ export default function FirstPost() {
        collection needs to be re-rendered instead of just re-rendering the 
        entire set of components every time anything changes.  */}
 
+{/* 1 way: from hardcoded component */}
       {movies.map((x) => {
          return <div key={x}>
                   {x}
@@ -43,9 +47,14 @@ export default function FirstPost() {
 
       <hr></hr>
 
+{/* 2 way: from mock data */}
       <ToDoList toDoList={toDoList}/>
 
-      <button onClick={alertName}>
+      <button onClick={logFirstList}>
+        click-me
+      </button>
+
+      <button onClick={logSecondList}>
         click-me
       </button>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import ToDo from './ToDo';
  
- 
 const ToDoList = ({toDoList}) => {
    return (
        <div>
