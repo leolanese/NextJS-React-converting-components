@@ -17,7 +17,7 @@ export default function Home() {
 
           <p className="card">
             <Link href="/requests/DisplayList">
-              <a>'Display.js'</a>
+              <a>'DisplayList.js'</a>
             </Link>
           </p>
 
@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="grid">
           <div className="customHr">.z</div>
-          <h2>Component: Class -> Functional</h2>
+          <h2>Component: Class to Functional</h2>
  
           <p className="card">
             <Link href="/get/noState">

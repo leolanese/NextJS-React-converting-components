@@ -4,11 +4,15 @@ import Display from './Display';
 const DisplayList = ({displayList}) => {
    return (
        <div>
-           {displayList.map(display => {
+           {displayList.map((display) => {
                return (
-                   <Display display={display}/>
+                   <Display 
+                        key={display.id} 
+                        display={display}
+                    />
                )
            })}
+
        </div>
    );
 };

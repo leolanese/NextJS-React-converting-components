@@ -2,7 +2,7 @@ import React from 'react';
  
 const Display = ({display}) => {
    return (
-       <div>
+       <div key={display}>
            {display.task}
        </div>
    );
