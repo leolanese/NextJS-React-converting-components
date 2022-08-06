@@ -19,9 +19,9 @@ export default function App() {
       
       {/* GET List: https://jsonplaceholder.typicode.com/posts */}
       <div>
-        <h1>Posts</h1>
+        <h1>Posts API Request</h1>
         { getPostsApi.loading && <p>Posts are loading!</p>}
-        { getPostsApi.error && <p>{getPostsApi.error}</p>}
+        { getPostsApi.error && <p>{ getPostsApi.error }</p>}
         <ul>
           { getPostsApi.data?.map((post) => (
             <li key={post.id}>
@@ -33,11 +33,11 @@ export default function App() {
 
       {/* GET List: https://jsonplaceholder.typicode.com/comments */}
       <div>
-        <h1>Comments</h1>
-        {getCommentsApi.loading && <p>Comments are loading!</p>}
-        {getCommentsApi.error && <p>{getCommentsApi.error}</p>}
+        <h1>Comments API Request</h1>
+        { getCommentsApi.loading && <p>Comments are loading!</p>}
+        { getCommentsApi.error && <p>{ getCommentsApi.error }</p>}
         <ul>
-          {getCommentsApi.data?.map((comment) => (
+          { getCommentsApi.data?.map((comment) => (
             <li key={comment.id}>
               {comment.name}
             </li>
