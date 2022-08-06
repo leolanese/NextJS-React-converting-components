@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import data from "../../src/mockData.json";
 
 // Functional Components
 export default function FirstPost() {

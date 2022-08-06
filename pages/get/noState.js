@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>This is a Functional Component with no state</h3>
+        <h1>This is a Functional Component with no state</h1>
       </header>
 
       <button onClick={alertName}>

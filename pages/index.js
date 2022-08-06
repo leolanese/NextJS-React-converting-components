@@ -13,16 +13,18 @@ export default function Home() {
 
         <div className="grid">
           <p className="card">
-            <Link href="/posts/keys">
-              <a>'keys.js'</a>
+            <Link href="/requests/displayList">
+              <a>'displayList.js'</a>
             </Link>
           </p>
 
           <p className="card">
-            <Link href="/authors/me">
-              <a>'me.js'</a>
+            <Link href="/requests/requestAPI">
+              <a>'requestAPI.js'</a>
             </Link>
           </p>
+
+          <div className="customHr">.z</div>
 
           <p className="card">
             <Link href="/get/noState">
@@ -62,6 +64,17 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+        .customHr {
+          width: 100%;
+          font-size: 1px;
+          color: rgba(0, 0, 0, 0);
+          line-height: 1px;
+
+          background-color: grey;
+          margin-top: -6px;
+          margin-bottom: 10px;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
