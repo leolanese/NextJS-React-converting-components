@@ -17,26 +17,30 @@ export default function App() {
   return (
     <div className="App">
       
-      {/* Post List */}
+      {/* GET List: https://jsonplaceholder.typicode.com/posts */}
       <div>
         <h1>Posts</h1>
-        {getPostsApi.loading && <p>Posts are loading!</p>}
-        {getPostsApi.error && <p>{getPostsApi.error}</p>}
+        { getPostsApi.loading && <p>Posts are loading!</p>}
+        { getPostsApi.error && <p>{getPostsApi.error}</p>}
         <ul>
-          {getPostsApi.data?.map((post) => (
-            <li key={post.id}>{post.title}</li>
+          { getPostsApi.data?.map((post) => (
+            <li key={post.id}>
+              {post.title}
+            </li>
           ))}
         </ul>
       </div>
 
-      {/* Comment List */}
+      {/* GET List: https://jsonplaceholder.typicode.com/comments */}
       <div>
         <h1>Comments</h1>
         {getCommentsApi.loading && <p>Comments are loading!</p>}
         {getCommentsApi.error && <p>{getCommentsApi.error}</p>}
         <ul>
           {getCommentsApi.data?.map((comment) => (
-            <li key={comment.id}>{comment.name}</li>
+            <li key={comment.id}>
+              {comment.name}
+            </li>
           ))}
         </ul>
       </div>

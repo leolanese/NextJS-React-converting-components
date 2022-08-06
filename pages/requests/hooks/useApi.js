@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default (apiFunc) => {
+  //  reusable API calling layer
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
