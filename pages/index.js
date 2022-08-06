@@ -13,8 +13,8 @@ export default function Home() {
 
         <div className="grid">
           <p className="card">
-            <Link href="/posts/first-post">
-              <a>'first-post.js'</a>
+            <Link href="/posts/keys">
+              <a>'keys.js'</a>
             </Link>
           </p>
 

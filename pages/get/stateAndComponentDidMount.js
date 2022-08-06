@@ -34,8 +34,9 @@ export default function multipleHooks() {
 
   return (
     <div>
-
-      <h1>Adding Hooks to a Class with State and componentDidMount</h1>
+       <header>
+           <h1>Adding Hooks to a Class with State and componentDidMoun</h1>
+       </header>
 
       <input
         type="text"

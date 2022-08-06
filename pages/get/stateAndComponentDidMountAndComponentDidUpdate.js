@@ -23,9 +23,11 @@ function App() {
 
   return (
     <div>
-      <h1 id="header">
+      <header>
+        <h1>
           Adding Hooks to a Class with State, componentDidMount, and componentDidUpdate
-      </h1>
+        </h1>
+      </header>
 
       <input
         type="text"
