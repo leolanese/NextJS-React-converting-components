@@ -74,7 +74,7 @@ export default function Home() {
           margin-top: -6px;
           margin-bottom: 10px;
         }
-
+        
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
