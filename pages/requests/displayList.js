@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import data from "../../src/mockData.json";
-import ToDoList from "./ToDoList";
+import DisplayListMap from "./DisplayListMap";
 
 // Functional Components
-export default function FirstPost() {
+export default function DisplayList() {
   const initialValue = [
     "Star Wars", 
     "Return of the Jedi", 
@@ -18,13 +18,13 @@ export default function FirstPost() {
     A method that is used to update that state if you need to (setMovies)
   */}
   const [ movies, setMovies ] = useState(initialValue);
-  const [ toDoList, setToDoList ] = useState(data);
+  const [ displayList, setDisplayList ] = useState(data);
 
   const logFirstList = () => {
     console.table(movies);
   };
   const logSecondList = () => {
-    console.table(toDoList);
+    console.table(displayList);
   };
 
   return (
@@ -48,7 +48,7 @@ export default function FirstPost() {
       <hr></hr>
 
 {/* 2 way: from mock data */}
-      <ToDoList toDoList={toDoList}/>
+      <DisplayListMap displayList={displayList}/>
 
       <button onClick={logFirstList}>
         click-me

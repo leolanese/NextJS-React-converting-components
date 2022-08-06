@@ -12,20 +12,26 @@ export default function Home() {
       <main>
 
         <div className="grid">
-          <p className="card">
-            <Link href="/requests/displayList">
-              <a>'displayList.js'</a>
-            </Link>
-          </p>
-
-          <p className="card">
-            <Link href="/requests/requestAPI">
-              <a>'requestAPI.js'</a>
-            </Link>
-          </p>
-
           <div className="customHr">.z</div>
+          <h2>Component: Display list + API request</h2>
 
+          <p className="card">
+            <Link href="/requests/DisplayList">
+              <a>'DisplayList.js'</a>
+            </Link>
+          </p>
+
+          <p className="card">
+            <Link href="/requests/RequestRemoteAPI">
+              <a>'RequestRemoteAPI.js'</a>
+            </Link>
+          </p>
+        </div>.
+
+        <div className="grid">
+          <div className="customHr">.z</div>
+          <h2>Component: Class -> Functional</h2>
+ 
           <p className="card">
             <Link href="/get/noState">
               <a>'noState.js'</a>
@@ -179,6 +185,7 @@ export default function Home() {
         .card:active {
           color: #0070f3;
           border-color: #0070f3;
+          background: #a7fa7b;
         }
 
         .card h3 {
