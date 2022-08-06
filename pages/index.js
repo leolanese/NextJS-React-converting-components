@@ -17,7 +17,7 @@ export default function Home() {
 
           <p className="card">
             <Link href="/requests/DisplayList">
-              <a>'DisplayList.js'</a>
+              <a>'Display.js'</a>
             </Link>
           </p>
 
