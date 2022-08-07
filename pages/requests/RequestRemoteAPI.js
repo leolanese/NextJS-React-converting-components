@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Link from 'next/link';
 
 import commentsApi from "./api/RequestRemoteApiComments";
 import postsApi from "./api/RequestRemoteApiPosts";
@@ -6,6 +7,7 @@ import postsApi from "./api/RequestRemoteApiPosts";
 import useApi from "./hooks/useApi";
 
 export default function App() {
+  // hooks
   const getPostsApi = useApi(postsApi.getPosts);
   const getCommentsApi = useApi(commentsApi.getComments);
 
@@ -44,6 +46,13 @@ export default function App() {
           ))}
         </ul>
       </div>
+
+      <h2 className="title">
+        <Link href="/">
+          <a>Back to index.js</a>
+        </Link>
+      </h2>
+
     </div>
   );
 }
